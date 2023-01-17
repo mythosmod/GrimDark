@@ -1,0 +1,18 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "grimdark",
+    "name": "GrimDark - A Grim Fantasy Mod for Cataclysm: Bright Nights",
+    "authors": [ "mythosmod" ],
+    "maintainers": [ "mythosmod" ],
+    "description": "A A Grim Fantasy Mod for Cataclysm: Bright Nights:\n- Zombies dont automatically revive without magical assistance.\n\nSee extended description in README.md.",
+    "category": "content",
+    "dependencies": [ "bn" ],
+    "version": "0.1"
+  },
+  {
+    "type": "monster_adjustment",
+    "species": "ZOMBIE",
+    "flag": { "name": "REVIVES", "value": false }
+  }
+]
