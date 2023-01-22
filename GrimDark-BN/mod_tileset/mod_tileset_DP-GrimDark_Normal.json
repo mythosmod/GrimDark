@@ -1,0 +1,47 @@
+[
+  {
+    "type": "mod_tileset",
+	"//" : "Minus 12448",
+    "compatibility": [ "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockXottoplus" ],
+    "tiles-new": [
+	  	  {
+        "file": "mod_tileset/normal_terrain.png",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "tiles": [
+		{ "id": [ "t_pavement", "t_pavement_y" ],
+		  "fg": [
+            { "weight": 40, "sprite": 1094 },
+            { "weight": 30, "sprite": 1095 },
+            { "weight": 30, "sprite": 1096 },
+            { "weight": 30, "sprite": 1097 },
+            { "weight": 1, "sprite": 1098 },
+            { "weight": 1, "sprite": 1099 },
+            { "weight": 1, "sprite": 1101 },
+            { "weight": 1, "sprite": 1102 },
+            { "weight": 1, "sprite": 1621 },
+            { "weight": 1, "sprite": 1040 },
+            { "weight": 1, "sprite": 1103 }
+          ],
+          "rotates": false,
+          "multitile": false
+		},
+        {
+          "id": "t_sidewalk",
+          "fg": 1215,
+          "rotates": true,
+          "multitile": true,
+          "additional_tiles": [
+            { "id": "center", "fg": 1216 },
+            { "id": "corner", "fg": [ 1217, 1218, 1219, 1220 ] },
+            { "id": "t_connection", "fg": [ 1227, 1228, 1229, 1230 ] },
+            { "id": "edge", "fg": [ 1221, 1222 ] },
+            { "id": "end_piece", "fg": [ 1223, 1224, 1225, 1226 ] },
+            { "id": "unconnected", "fg": 1231 }
+          ]
+        }
+		]
+      }
+    ]
+  }
+]

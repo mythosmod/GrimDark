@@ -1,9 +1,9 @@
 [
   {
-	"//": "Regional settings to be in the old world - temperate deciduous forest",
+	"//": "Regional settings to be in the old world - temperate deciduous forest everywhere",
     "type": "region_settings",
     "id": "default",
-    "default_oter": "field",
+    "default_oter": "forest",
     "default_groundcover": [ [ "t_region_groundcover", 1 ] ],
     "region_terrain_and_furniture": {
       "terrain": {
@@ -360,7 +360,7 @@
           "mx_pond": 125,
           "mx_clay_deposit": 125,
           "mx_point_dead_vegetation": 500,
-          "mx_point_burned_ground": 500
+          "mx_point_burned_ground": 500,
           "mx_nest_dermatik": 10
         }
       },
