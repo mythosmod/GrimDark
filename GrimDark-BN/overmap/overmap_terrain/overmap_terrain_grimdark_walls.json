@@ -1,0 +1,26 @@
+[
+{
+    "type": "overmap_terrain",
+    "id": [ "coaching_inn_outer_wall_0", "coaching_inn_outer_wall_1", "coaching_inn_outer_wall_2" ],
+    "name": "coaching inn wall",
+    "sym": "║",
+    "see_cost": 1,
+    "color": "light_gray"
+  },
+{
+    "type": "overmap_terrain",
+    "id": [ "coaching_inn_outer_wall_corner_0", "coaching_inn_outer_wall_corner_1", "coaching_inn_outer_wall_corner_2" ],
+    "name": "coaching inn wall",
+    "sym": "╔",
+    "see_cost": 1,
+    "color": "light_gray"
+  },
+{
+    "type": "overmap_terrain",
+    "id": [ "coaching_inn_outer_wall_gate_0", "coaching_inn_outer_wall_gate_1", "coaching_inn_outer_wall_gate_2" ],
+    "name": "coaching inn wall",
+    "sym": "╏",
+    "see_cost": 1,
+    "color": "light_gray"
+  }
+]

@@ -242,7 +242,6 @@
   {
     "type": "palette",
     "id": "standard_domestic_landscaping_palette",
-    "//": "Intended to be used in conjunction with standard_domestic_palette. Load the domestic palette first, then this one to use open symbols for landscaping.",
     "terrain": {
       "%": [ "t_region_shrub", "t_region_shrub_fruit", "t_region_shrub_decorative" ],
       "[": [ [ "t_region_tree_fruit", 2 ], [ "t_region_tree_nut", 2 ], "t_region_tree_shade" ],
@@ -251,5 +250,57 @@
       "`": "t_concrete"
     },
     "furniture": { "!": "f_region_flower" }
+  },
+  {
+    "type": "palette",
+    "id": "grimdark_coaching_inn_wall_lower",
+    "terrain": {
+      "#": "t_rock_wall",
+	  ".": "t_region_groundcover",
+      ",": "t_region_groundcover_forest",
+	  "+": "t_palisade_gate",
+	  "|": "t_palisade",
+	  "@": "t_palisade_pulley"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "grimdark_coaching_inn_wall_upper",
+    "terrain": {
+      "#": "t_rock_wall",
+	  ".": "t_open_air"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "grimdark_coaching_inn_wall_top",
+    "terrain": {
+      "#": "t_rock_floor",
+	  ".": "t_open_air"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "grimdark_ruined_house_lower",
+    "terrain": {
+      "#": [ ["t_rock_wall", 3], ["t_rock_wall_half", 1] ],
+      "<": [ ["t_stairs_up", 1], ["t_floor", 3] ],
+      "=": [ ["t_window_frame", 2], ["t_rock_wall", 1], ["t_rock_wall_half", 1] ],
+	  "]": [ ["t_region_groundcover_forest", 3], ["t_rock_wall", 1], ["t_rock_wall_half", 1] ],
+	  ".": [ ["t_region_groundcover_forest", 120], ["t_region_shrub", 12] ], 
+	  ":": "t_floor"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "grimdark_ruined_house_upper",
+    "terrain": {
+      "#": [ ["t_rock_wall", 3], ["t_rock_wall_half", 1], ["t_rock_floor", 1] ],
+      ">": [ ["t_stairs_down", 1], ["t_open_air", 3] ],
+      "=": [ ["t_window_frame", 2], ["t_rock_wall", 1], ["t_rock_wall_half", 1] ],
+	  "]": [ ["t_rock_floor", 3], ["t_rock_wall", 1], ["t_rock_wall_half", 1] ],
+	  ".": "t_open_air", 
+	  ":": [ ["t_floor", 4], ["t_open_air", 1] ]
+    }
   }
 ]

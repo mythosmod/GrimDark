@@ -1,0 +1,10 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": [ "ruined_house_1_0", "ruined_house_1_1" ],
+    "name": "ruined_house_1",
+    "sym": ";",
+    "color": "brown",
+    "mondensity": 2
+  }
+]

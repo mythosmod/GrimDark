@@ -4,12 +4,9 @@
     "id": "local_road",
     "default_terrain": "forest_trail",
     "subtypes": [
-      { "terrain": "forest_road", "locations": [ "field", "road" ] },
-      { "terrain": "forest_road", "locations": [ "forest_without_trail" ], "basic_cost": 20 },
-      { "terrain": "forest_road", "locations": [ "forest_trail" ], "basic_cost": 25 },
-      { "terrain": "forest_road", "locations": [ "swamp" ], "basic_cost": 40 },
-      { "terrain": "bridge", "locations": [ "water" ], "basic_cost": 120 },
-      { "terrain": "bridgehead_ground", "locations": [ "water" ], "basic_cost": 120 }
+      { "terrain": "forest_trail", "locations": [ "field", "road", "forest" ] },
+      { "terrain": "forest_trail", "locations": [ "swamp" ], "basic_cost": 40 },
+      { "terrain": "bridge", "locations": [ "water" ], "basic_cost": 120 }
     ]
   },
   {
