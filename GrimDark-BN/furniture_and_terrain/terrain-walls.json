@@ -1,0 +1,317 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_drystone_wall",
+    "name": "field stone wall",
+    "description": "A sturdy dry stone wall.  Just rocks fitted together without mortar.",
+    "symbol": "LINE_OXOX",
+    "color": "light_gray",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_flat_roof",
+    "flags": [ "NOITEM", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 50,
+      "str_max": 200,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "rock", "count": [ 8, 18 ] }, { "item": "pebble", "count": [ 20, 38 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rock_wall_no_roof",
+    "name": "stone wall",
+    "description": "A sturdy stone wall.",
+    "symbol": "LINE_OXOX",
+    "color": "light_gray",
+    "move_cost": 0,
+    "coverage": 100,
+	"looks_like": "t_rock_wall",
+    "roof": "t_rock_floor_no_roof",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 80,
+      "str_max": 300,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "rock", "count": [ 8, 18 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rock_wall_thatched_roof",
+    "name": "stone wall",
+    "description": "A sturdy stone wall.",
+    "symbol": "LINE_OXOX",
+    "color": "light_gray",
+	"looks_like": "t_rock_wall",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_thatch_roof",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 80,
+      "str_max": 300,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "rock", "count": [ 8, 18 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rock_wall_tile_roof",
+    "name": "stone wall",
+    "description": "A sturdy stone wall.",
+    "symbol": "LINE_OXOX",
+    "color": "light_gray",
+	"looks_like": "t_rock_wall",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_tile_flat_roof",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 80,
+      "str_max": 300,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "rock", "count": [ 8, 18 ] } ]
+    }
+  },
+  {
+    "id": "t_wall_wattle_no_roof",
+    "type": "terrain",
+    "name": "wattle-and-daub wall",
+    "description": "A relatively primitive wall made by daubing together a lattice of wooden strips using some combination of wet soil, clay, sand, animal dung and straw.",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 100,
+	"looks_like": "t_wall_wattle",
+    "roof": "t_floor_primitive_no_roof",
+    "bash": {
+      "str_min": 10,
+      "str_max": 140,
+      "ter_set": "t_wall_wattle_broken",
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "2x4", "count": [ 0, 3 ] }, { "item": "splinter", "count": [ 0, 6 ] } ]
+    },
+    "flags": [ "FLAMMABLE_HARD", "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "BLOCK_WIND" ]
+  },
+  {
+    "id": "t_wall_wattle_tile_roof",
+    "type": "terrain",
+    "name": "wattle-and-daub wall",
+    "description": "A relatively primitive wall made by daubing together a lattice of wooden strips using some combination of wet soil, clay, sand, animal dung and straw.",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 100,
+	"looks_like": "t_wall_wattle",
+    "roof": "t_tile_flat_roof",
+    "bash": {
+      "str_min": 10,
+      "str_max": 140,
+      "ter_set": "t_wall_wattle_broken",
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "2x4", "count": [ 0, 3 ] }, { "item": "splinter", "count": [ 0, 6 ] } ]
+    },
+    "flags": [ "FLAMMABLE_HARD", "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "BLOCK_WIND" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_no_roof",
+    "name": "log wall",
+    "description": "A tall wall of timber suitable for housing and insulating from the weather.  Quite flammable.",
+    "symbol": "LINE_OXOX",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_floor_primitive_no_roof",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 60,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "ter_set": "t_wall_log_chipped_no_roof",
+      "items": [ { "item": "splinter", "count": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_chipped_no_roof",
+    "name": "chipped log wall",
+    "description": "A moderately damaged wall, could probably be patched up with some planks and nails.",
+    "symbol": "LINE_OXOX",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_floor_primitive_no_roof",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "REDUCE_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 40,
+      "str_max": 160,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "ter_set": "t_wall_log_broken_no_roof",
+      "items": [ { "item": "splinter", "count": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_broken_no_roof",
+    "name": "broken log wall",
+    "description": "A destroyed wood wall, with only a supporting log left, ready to collapse.  Looks repairable if the damage was replaced and patched together with nails and planks.",
+    "symbol": "&",
+    "color": "brown",
+    "move_cost": 0,
+    "roof": "t_floor_primitive_no_roof",
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "REDUCE_SCENT", "PERMEABLE", "CONNECT_TO_WALL" ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 150,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "splinter", "count": [ 10, 20 ] } ],
+      "ranged": { "reduction": [ 20, 40 ], "block_unaimed_chance": "12.5%" }
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_thatched_roof",
+    "name": "log wall",
+    "description": "A tall wall of timber suitable for housing and insulating from the weather.  Quite flammable.",
+    "symbol": "LINE_OXOX",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_thatch_roof",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 60,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "ter_set": "t_wall_log_chipped_no_roof",
+      "items": [ { "item": "splinter", "count": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_chipped_thatched_roof",
+    "name": "chipped log wall",
+    "description": "A moderately damaged wall, could probably be patched up with some planks and nails.",
+    "symbol": "LINE_OXOX",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_thatch_roof",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "REDUCE_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 40,
+      "str_max": 160,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "ter_set": "t_wall_log_broken_no_roof",
+      "items": [ { "item": "splinter", "count": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_broken_thatched_roof",
+    "name": "broken log wall",
+    "description": "A destroyed wood wall, with only a supporting log left, ready to collapse.  Looks repairable if the damage was replaced and patched together with nails and planks.",
+    "symbol": "&",
+    "color": "brown",
+    "move_cost": 0,
+    "roof": "t_thatch_roof",
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "REDUCE_SCENT", "PERMEABLE", "CONNECT_TO_WALL" ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 150,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "splinter", "count": [ 10, 20 ] } ],
+      "ranged": { "reduction": [ 20, 40 ], "block_unaimed_chance": "12.5%" }
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_tile_roof",
+    "name": "log wall",
+    "description": "A tall wall of timber suitable for housing and insulating from the weather.  Quite flammable.",
+    "symbol": "LINE_OXOX",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_tile_flat_roof",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 60,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "ter_set": "t_wall_log_chipped_no_roof",
+      "items": [ { "item": "splinter", "count": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_chipped_tile_roof",
+    "name": "chipped log wall",
+    "description": "A moderately damaged wall, could probably be patched up with some planks and nails.",
+    "symbol": "LINE_OXOX",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_tile_flat_roof",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "REDUCE_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 40,
+      "str_max": 160,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "ter_set": "t_wall_log_broken_no_roof",
+      "items": [ { "item": "splinter", "count": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_log_broken_tile_roof",
+    "name": "broken log wall",
+    "description": "A destroyed wood wall, with only a supporting log left, ready to collapse.  Looks repairable if the damage was replaced and patched together with nails and planks.",
+    "symbol": "&",
+    "color": "brown",
+    "move_cost": 0,
+    "roof": "t_tile_flat_roof",
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "REDUCE_SCENT", "PERMEABLE", "CONNECT_TO_WALL" ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 150,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "items": [ { "item": "splinter", "count": [ 10, 20 ] } ],
+      "ranged": { "reduction": [ 20, 40 ], "block_unaimed_chance": "12.5%" }
+    }
+  }
+]

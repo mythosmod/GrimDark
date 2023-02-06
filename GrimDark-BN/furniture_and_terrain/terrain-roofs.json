@@ -1,0 +1,14 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_slate_roof",
+    "name": "slate roof",
+    "description": "A sloped section of rooftop covered in dark slate tiles.",
+    "looks_like": "t_shingle_flat_roof",
+    "symbol": ".",
+    "color": "light_gray",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "UNSTABLE" ],
+    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "bash_below": true }
+  }
+]
